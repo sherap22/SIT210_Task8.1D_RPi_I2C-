@@ -21,13 +21,15 @@ def message():
     intensity=Light()
     print(Light())
     if(intensity>= 1400):
-        print("Very Bright")
+        print("too bright")
     elif(intensity> 300 and intensity<1000):
-        print("Bright")
+        print("bright")
+    elif(intensity> 90 and intensity<300):
+        print("medium")
     elif(intensity<90 and intensity>30):
-        print("Dark")
+        print("dark")
     elif(intensity<30):
-        print("Very Dark")
+        print("too dark")
  
     time.sleep(0.25)
     
